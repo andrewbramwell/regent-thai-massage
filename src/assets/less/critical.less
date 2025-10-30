@@ -4,144 +4,145 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-2151 {
-        /* 160px - 200px - top leaving extra space for the navigation */
-        padding: clamp(13rem, 33.735vw, 16.25rem) 0 0 0;
+    #hero-856 {
+        /* centers button */
+        text-align: center;
+        /* 116px - 164px top */
+        /* 60px - 100px  bottom */
+        padding: clamp(13.05rem, 30.276vw, 18.45rem) (16/16rem)
+        clamp(3.75rem, 7.82vw, 6.25rem);
+        background-color: #fff;
+        /* clips the svg wave from overflowing */
         overflow: hidden;
-        
+        position: relative;
+        z-index: 1;
 
         .cs-container {
             width: 100%;
-            max-width: (1720/16rem);
+            max-width: (1280/16rem);
             margin: auto;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            /* 48px - 100px */
-            gap: clamp(3rem, 6vw, 6.25rem);
+            flex-direction: column;
+            gap: (48/16rem);
         }
 
         .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: center;
-            width: 100%;
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            /* 16px - 100px left & right */
-            padding: 0 clamp(1rem, 2vw, 6.25rem);
+            max-width: (630/16rem);
             display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
+            justify-content: center;
             align-items: center;
-            position: relative;
-            z-index: 1;
+            flex-direction: column;
+        }
+
+        .cs-topper {
+            font-size: (16/16rem);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: inherit;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: (4/16rem);
+            display: block;
         }
 
         .cs-title {
             /* 39px - 61px */
-            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-            max-width: 30ch;
+            font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: center;
+            /* 23 characters including spaces wide */
+            max-width: 23ch;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+            position: relative;
         }
 
         .cs-text {
             /* 16px - 20px */
             font-size: clamp(1rem, 1.5vw, 1.25rem);
-            max-width: 65ch;
-            margin: 0 0 (32/16rem) 0;
+            line-height: 1.5em;
+            text-align: center;
+            width: 100%;
+            max-width: (531/16rem);
+            /* 28px - 40px */
+            margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
+            color: var(--bodyTextColor);
         }
 
-        .cs-background {
+        .cs-picture {
             width: 100%;
-            height: 100vw;
-            max-height: (476/16rem);
+            max-width: (570/16rem);
+            /* 400px - 712px */
+            height: clamp(25rem, 95vw, 44.5rem);
+            /* 100px - 200px */
+            border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0
+                clamp(6.25rem, 17vw, 12.5rem);
+            /* clips the img tag corners */
+            overflow: hidden;
             display: block;
             position: relative;
-            z-index: 1;
 
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
                 position: absolute;
                 top: 0;
                 left: 0;
+                height: 100%;
+                width: 100%;
+                /* makes image act as a background image */
+                object-fit: cover;
+                /* ensures the top of the images is at the top of the container, no heads getting cut off */
+                object-position: top;
             }
-        }
-
-        .cs-graphic {
-            /* 200px - 280px */
-            width: clamp(12.5rem, 25vw, 17.5rem);
-            height: auto;
-            display: none;
-            position: absolute;
         }
     }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #hero-2151 {
-        .cs-graphic {
-            display: block;
-            bottom: calc(clamp(3rem, 6vw, 6.25rem)*-1);
-            left: 0;
-            z-index: 0;
-        }
-
-        .cs-content {
-            /* 60px - 100px */
-            padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
-        }
+    #hero-856 {
+        padding-top:380px;
     }
 }
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #hero-2151 {
-        /* 120px - 250px top */
-        /* 60px - 200px  bottom */
-        padding: clamp(9.75rem, 30.966vw, 20.3125rem) (16/16rem) clamp(3.75rem, 15.82vw, 12.5rem) (16/16rem);
-
+    #hero-856 {
+        padding: clamp(18.792rem, 43.59744vw, 26.568rem) (16/16rem)
+        clamp(3.75rem, 7.82vw, 6.25rem);
+        text-align: left;
         .cs-container {
             flex-direction: row;
+            justify-content: space-between;
         }
 
         .cs-content {
-            /* removed padding and put it on the section */
-            width: 55%;
-            /* 16px - 100px */
-            padding: 0 clamp(1rem, 2vw, 6.25rem);
+            width: 40vw;
+            /* prevents flex-box from squishing it */
+            flex: none;
+            align-items: flex-start;
+            /* sends it to the right in the 2nd position */
+            order: 2;
         }
 
-        .cs-background {
-            width: 42%;
-            height: auto;
-            max-height: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
+        .cs-title,
+        .cs-text {
+            text-align: left;
         }
 
-        .cs-graphic {
-            bottom: calc(clamp(3.75rem, 15.82vw, 12.5rem)*-1);
-        }
-    }
-}
-
-/* Large Desktop - 1440px */
-@media only screen and (min-width: 90rem) {
-    #hero-2151 {
-        .cs-background {
-            width: 50%;
+        .cs-picture {
+            /* 623px - 814px */
+            height: clamp(38.9375rem, 60vw, 50.875rem);
         }
 
-        .cs-content {
-            width: 50%;
-        }
-
-        .cs-graphic {
-            left: (-70/16rem);
+        .cs-wave {
+            width: 100%;
+            left: 0;
+            /* flips it horizontally */
+            transform: scaleX(-1);
         }
     }
 }
@@ -149,34 +150,33 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #hero-2151 {
-            background-color: rgba(0, 0, 0, .2);
-
+        #hero-856 {
+            background-color: rgba(0, 0, 0, 0.2);
             .cs-title,
-            .cs-text {
+            .cs-text,
+            .cs-number,
+            .cs-desc {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text {
-                opacity: 0.8;
+            .cs-wave {
+                path {
+                    fill: var(--dark);
+                }
             }
         }
     }
 }
-
-/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
 
 #button-box-838 {
     width: 100%;
     max-width: calc(630 / 16 * 1rem);
     margin-bottom: calc(32 / 16 * 1rem);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: calc(24 / 16 * 1rem);
-
-    
 
     .cs-button-transparent {
         font-size: (16/16rem);
@@ -207,6 +207,13 @@
     }
 }
 
+/* Tablet and Mobile - Center buttons */
+@media only screen and (max-width: 1023px) {
+    #button-box-838 {
+        justify-content: center;
+    }
+}
+
 /* Dark Mode */
 body.dark-mode {
     #button-box-838 {
@@ -215,4 +222,8 @@ body.dark-mode {
         }
     }
 }
+                                
+                                
 
+                                
+                                

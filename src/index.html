@@ -7,6 +7,7 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
 eleventyNavigation:
   key: Home
   order: 100
+  navGroup: "left"  
 ---
 
 {% extends "layouts/base.html" %}
@@ -74,11 +75,38 @@ eleventyNavigation:
 
 {% block body %}
 
+                                     
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-{% include "components/hero-2151.html" %}                  
+<section id="hero-856">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Relax & Restore</span>
+            <h1 class="cs-title">Authentic Thai Massage in Cheltenham</h1>
+            <p class="cs-text">
+                Escape the everyday at Regent Thai Massage & Spa. Conveniently located in Cheltenham town centre, we offer traditional Thai massage, aromatherapy, and therapeutic treatments delivered by qualified professionals. Experience genuine healing and lasting relief.
+            </p>
+            <div id="button-box-838" class="cs-contact-group">
+                <a href="{{client.onlineBooking}}" class="cs-button-solid">Book Now</a>
+                <a href="tel:{{client.phoneForTel}}" class="cs-button-transparent">{{client.phoneFormatted}}</a>
+            </div>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="570" height="701">
+        </picture>
+    </div>
+</section>
+                                
+                                
 
 <!-- ============================================ -->
 <!--                  Services                    -->

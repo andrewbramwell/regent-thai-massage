@@ -1,0 +1,41 @@
+<!-- ============================================ -->
+<!--                   hero                       -->
+<!-- ============================================ -->
+
+<section id="hero-929">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Authentic Thai Massage in Cheltenham</h2>
+            <div class="cs-flex">
+                <div class="cs-content-group">
+                    <p class="cs-text">
+                        Escape the everyday at Regent Thai Massage & Spa. Conveniently located in Cheltenham town centre, we offer traditional Thai massage, aromatherapy, and therapeutic treatments delivered by qualified professionals.
+                    </p>
+                    <a href="" class="cs-button-solid">Book An Appointment</a>
+                </div>
+                <div class="cs-hours-group">
+                    <span class="cs-header">Business Hours</span>
+                    <div class="cs-hours">
+                        <span class="cs-day">Mon-Sat</span>
+                        <span class="cs-time">10am - 8pm</span>
+                    </div>
+                    <div class="cs-hours">
+                        <span class="cs-day">Sunday</span>
+                        <span class="cs-time">11am - 7pm</span>
+                    </div>
+                </div>
+            </div>
+            <!--We need this wrapper div so we can place the cs-tagline around the cs-picture image. We can only place images inside picture tags so the cs-tagline can't go in there. hence we HAVE to make a div wrapper so they can be placed together-->
+            <div class="cs-picture-group">
+                <!--Hair Model Picture-->
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/hero.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/hero.png">
+                    <img loading="lazy" decoding="async" src="/assets/images/hero.png" alt="hair model" width="576" height="598">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
