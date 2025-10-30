@@ -95,13 +95,19 @@ eleventyNavigation:
         </div>
         <!--Hero Image-->
         <picture class="cs-picture">
-            <!--Mobile-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <!--Tablet-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <!--Desktop-->
-            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="570" height="701">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1424}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1424}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1424}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1628}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1628}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1628}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/hero.jpg" | resize({width: 1140, height: 1628}) | jpeg %}" alt="massge" width="570" height="814" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
     </div>
 </section>
