@@ -1,0 +1,83 @@
+---
+title: 'Booking Policy'
+description: "Booking Policy for Regent Thai Massage & Spa, Cheltenham. Learn how we use cookies on our website and how to manage your preferences. UK GDPR compliant."
+permalink: 'booking-policy/'
+preloadImg: '/assets/images/banner.webp'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Booking Policy for <span class="cs-color">{{client.name}}</span></h1>
+            
+            <p><strong>Last Updated: 18/10/2025</strong></p>
+
+            <p>Thank you for choosing Regent Thai Massage & Spa. To ensure we can provide the best service to all our clients, please read our booking policy carefully before making your appointment.</p>
+
+            <h2>Making a Booking</h2>
+            <p>Appointments can be made through our online booking system or by contacting us directly by phone or email. We recommend booking in advance to secure your preferred date and time, particularly for weekend appointments and our popular treatments.</p>
+
+            <h2>Payment</h2>
+            <p>Payment is required at the time of booking to secure your appointment. We accept all major credit and debit cards through our secure online booking system.</p>
+
+            <h2>Cancellation Policy</h2>
+            
+            <h3>Cancellations More Than 24 Hours in Advance</h3>
+            <p>If you need to cancel your appointment and provide more than 24 hours' notice, you will receive a refund minus a £5 administration fee. This fee covers the administrative costs of processing your booking and refund.</p>
+
+            <h3>Cancellations Less Than 24 Hours in Advance</h3>
+            <p>Cancellations made with less than 24 hours' notice will not be refunded. This policy allows us to manage our appointment schedule effectively and ensures fairness to other clients who may have wanted that appointment time.</p>
+
+            <h3>No Shows</h3>
+            <p>If you fail to attend your scheduled appointment without prior notice (a "no show"), you will not be entitled to a refund. We reserve the right to require advance payment for future bookings.</p>
+
+            <h2>Changing Your Booking</h2>
+            <p>If you need to change your appointment date, time, or treatment type, please contact us as soon as possible. We will do our best to accommodate your request subject to availability. Changes are treated the same as cancellations if made within 24 hours of your original appointment time.</p>
+
+            <h2>Late Arrivals</h2>
+            <p>We understand that sometimes delays are unavoidable. However, if you arrive late for your appointment, your treatment time may need to be shortened to avoid delays for other clients. The full treatment price will still apply. If you know you're running late, please call us so we can try to accommodate you.</p>
+
+            <h2>Special Circumstances</h2>
+            <p>We understand that emergencies and unforeseen circumstances can occur. In exceptional cases, such as medical emergencies or family bereavement, we may waive our cancellation policy at our discretion. Please contact us to discuss your situation.</p>
+
+            <h2>Our Commitment to You</h2>
+            <p>Should we need to cancel or reschedule your appointment for any reason, we will provide you with as much notice as possible and offer you alternative appointment times or a full refund.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about our booking policy or need to make changes to your appointment, please contact us:</p>
+            <p><strong>{{client.name}}</strong><br>
+            {{client.address.lineOne}},<br>
+            {{client.address.lineTwo}},<br>
+            {{client.address.city}} {{client.address.zip}}<br>
+            {{client.phoneFormatted}}<br>
+            {{client.email}}</p>
+            
+            <p>Our opening hours:<br>
+            Monday - Saturday: 10am - 8pm<br>
+            Sunday: 11am - 7pm</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We reserve the right to update this booking policy at any time. Any changes will be posted on this page with an updated revision date. By making a booking with us, you agree to these terms and conditions.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    {% if eleventyNavigation and eleventyNavigation.key %}
+        <h1 id="home-h">{{eleventyNavigation.key}}</h1>
+    {% else %}
+        <!-- Fallback for pages without eleventyNavigation -->
+        <h1 id="home-h">{{ title | default(page.fileSlug) }}</h1>
+    {% endif %}
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="restaurant banner" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+                   

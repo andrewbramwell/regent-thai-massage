@@ -1,0 +1,71 @@
+---
+title: 'Thai Massage Cheltenham'
+description: "Experience authentic Traditional Thai Massage in Cheltenham. Expert therapists use stretching and pressure points for pain relief. Book your session today."
+preloadImg: '/assets/images/banner.webp'
+permalink: 'thai-massage/'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 1084, height: 1334}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 1084, height: 1334}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" alt="thai massage" width="542" height="728" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Experience <span class="cs-color">Traditional Thai Massage</span> in Cheltenham</h1>
+            <p>Welcome to Regent Thai Massage & Spa! Immerse yourself in the authentic healing art of Traditional Thai Massage, where centuries-old techniques from Buriram, Thailand combine with expert touch to restore balance and vitality to your body and mind.</p>
+            <p>In your session, our skilled therapist uses time-honoured techniques including compression, pulling, stretching, and rocking, prioritising metta (loving-kindness) from Buddhist teachings. Performed fully clothed on traditional floor mats, this dynamic treatment effectively alleviates muscle pain, soreness, and back pain through targeted exercises, stretching, and pressure point manipulation, promoting improved blood flow and relieving tight muscle spots.</p>
+            <p>Our Traditional Thai Massage is perfect for those seeking a holistic approach to wellness. Often described as 'passive yoga', this treatment helps improve flexibility, relieve muscle tension, and boost energy levels. Whether you're dealing with specific areas of tension, seeking to improve your range of motion, or looking to maintain overall wellness, this authentic Thai massage experience offers profound benefits for body and spirit.</p>
+            <h3>Discover the Regent Thai Massage Difference</h3>
+            <ul>
+                <li>
+                    <strong>Authentic Thai Heritage:</strong> Experience genuine Thai massage techniques rooted in Buriram traditions, delivered by our qualified therapists with over a decade of combined expertise.
+                </li>
+                <li>
+                    <strong>Enhanced Flexibility:</strong> Benefit from our unique combination of stretching and pressure point work, designed to improve your range of motion and overall flexibility.
+                </li>
+                <li>
+                    <strong>Energy Flow & Metta:</strong> Traditional techniques work along the body's energy lines with loving-kindness at the heart of every treatment, promoting natural healing and balance.
+                </li>
+                <li>
+                    <strong>Pristine Traditional Setting:</strong> Our dedicated floor massage room with traditional mats provides an authentic experience in our spacious, immaculately clean Cheltenham spa.
+                </li>
+                <li>
+                    <strong>Expert, Qualified Therapists:</strong> Each session is delivered by our experienced team, fully insured and trained in authentic Thai techniques, ensuring both comfort and optimal therapeutic results.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

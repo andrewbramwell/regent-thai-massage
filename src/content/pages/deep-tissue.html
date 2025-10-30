@@ -1,0 +1,71 @@
+---
+title: 'Deep Tissue Massage Cheltenham'
+description: "Deep tissue massage in Cheltenham. Expert therapists use Thai herbal balm and firm pressure to relieve chronic pain. Book at Regent Thai Massage & Spa today."
+preloadImg: '/assets/images/banner.webp'
+permalink: 'deep-tissue/'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 1084, height: 1334}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 1084, height: 1334}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" alt="deep tissue massage" width="542" height="728" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Experience <span class="cs-color">Deep Tissue Massage</span> in Cheltenham</h1>
+            <p>Welcome to Regent Thai Massage & Spa! Discover the transformative power of Deep Tissue Massage, where intensive therapeutic techniques combine with traditional Thai herbal balm to target chronic tension and restore muscle mobility.</p>
+            <p>In your session, our skilled therapist uses aromatic oils combined with traditional Thai herbal balm, employing firm pressure and deliberate, slow strokes to reach deep muscle layers. This powerful treatment effectively releases persistent tension, reduces inflammation, and restores muscle mobility, providing lasting relief for those with chronic pain or postural issues.</p>
+            <p>Our Deep Tissue Massage is perfect for those seeking intensive therapeutic relief. Whether you're dealing with stubborn muscle knots, chronic tension, ongoing discomfort, or seeking to address long-standing muscular issues, this focused treatment offers profound healing benefits for both body and mind.</p>
+            <h3>Discover the Regent Thai Massage Difference</h3>
+            <ul>
+                <li>
+                    <strong>Qualified Expert Therapists:</strong> Experience professional deep tissue techniques delivered by our fully qualified team, each with over two years of hands-on experience.
+                </li>
+                <li>
+                    <strong>Traditional Thai Herbal Balm:</strong> Benefit from our unique combination of aromatic oils and authentic Thai herbal balm, enhancing the therapeutic effects of your treatment.
+                </li>
+                <li>
+                    <strong>Chronic Pain Relief:</strong> Targeted techniques address deep-seated muscle tension, providing lasting relief from persistent discomfort and improving overall muscle function.
+                </li>
+                <li>
+                    <strong>Pristine Treatment Environment:</strong> Our spacious, immaculately clean facilities with fresh linens for every client create the perfect setting for your therapeutic journey.
+                </li>
+                <li>
+                    <strong>Personalised Pressure:</strong> Each session is carefully adapted to your comfort level and specific needs, ensuring optimal therapeutic results whilst maintaining your wellbeing throughout.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

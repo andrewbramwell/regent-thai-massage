@@ -1,0 +1,71 @@
+---
+title: 'Thai Oil Massage Cheltenham'
+description: "Experience Thai Oil Massage in Cheltenham. Authentic Thai methods combined with soothing oils for ultimate relaxation. Book your treatment today."
+preloadImg: '/assets/images/banner.webp'
+permalink: 'thai-oil/'
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 874, height: 1072}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 1084, height: 1334}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 1084, height: 1334}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/oil-massage.jpg" | resize({width: 1084, height: 1334}) | jpeg %}" alt="thai oil massage" width="542" height="728" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Experience <span class="cs-color">Thai Oil Massage</span> in Cheltenham</h1>
+            <p>Welcome to Regent Thai Massage & Spa! Discover the perfect balance of relaxation and therapeutic relief with Thai Oil Massage, where traditional Thai massage techniques combine with aromatic oils to deliver deep muscle work in ultimate comfort.</p>
+            <p>In your session, our skilled therapist combines authentic Thai massage methods with soothing aromatic oils on a comfortable massage bed. This treatment delivers deeper relaxation than traditional Thai massage whilst still working the deep layers of the muscles. Using time-honoured Thai techniques, this massage offers a perfect balance of therapeutic pressure and soothing comfort for complete rejuvenation.</p>
+            <p>Our Thai Oil Massage is perfect for those seeking the therapeutic benefits of Thai massage with enhanced relaxation. The combination of aromatic oils and traditional techniques creates a deeply calming experience whilst effectively releasing muscle tension, improving circulation, and promoting overall wellbeing. Whether you're new to Thai massage or prefer a more relaxing approach, this treatment offers the best of both worlds.</p>
+            <h3>Discover the Regent Thai Massage Difference</h3>
+            <ul>
+                <li>
+                    <strong>Best of Both Worlds:</strong> Experience authentic Thai massage techniques enhanced with aromatic oils, combining therapeutic effectiveness with deep relaxation.
+                </li>
+                <li>
+                    <strong>Deep Muscle Relief:</strong> Benefit from traditional Thai methods that target deep muscle layers whilst the oils allow for smooth, flowing movements and enhanced comfort.
+                </li>
+                <li>
+                    <strong>Qualified Expert Therapists:</strong> Our experienced team brings over two years of hands-on expertise in authentic Thai massage techniques, ensuring professional treatment every time.
+                </li>
+                <li>
+                    <strong>Luxurious Comfort:</strong> Enjoy your treatment on our comfortable massage beds in pristine, spacious rooms with fresh linens prepared for every client.
+                </li>
+                <li>
+                    <strong>Aromatic Therapy:</strong> Premium oils enhance the therapeutic benefits whilst creating a sensory experience that promotes relaxation, stress relief, and complete rejuvenation.
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

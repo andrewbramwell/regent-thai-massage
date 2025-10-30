@@ -1,0 +1,144 @@
+---
+title: 'About | Regent Thai Massage & Spa'
+description: 'About Regent Thai Massage & Spa in Cheltenham. Founded by experienced Thai therapist Runa in 2024, offering authentic treatments with qualified staff.'
+permalink: 'about/'
+preloadImg: '/assets/images/banner.webp'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--            Featured Service 1                -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/runa.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/runa.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Professional Care Meets Thai Hospitality</h2>
+            <p class="cs-text">
+                Regent Thai Massage & Spa opened its doors in 2024, realising owner Runa's long-held dream of creating a genuine therapeutic healing centre in Cheltenham. With roots in Buriram, Thailand, and over a decade of hands-on experience since moving to the UK in 2007, Runa understood what was missing: a spa that combined authentic Thai massage traditions with professional standards and a truly welcoming atmosphere.
+            </p>
+            <p class="cs-text">
+                Experience and qualifications matter. That's why our team of three dedicated therapists each bring over two years of professional practice and recognised qualifications to every treatment. Our spacious Cheltenham premises feature five thoughtfully designed treatment rooms, including a private couples room, three oil massage suites, and a traditional floor massage space. We maintain rigorous standards with full insurance, impeccably clean facilities, and fresh linens for every single client. Thoughtful touches like complimentary WiFi, water and tea, accessible facilities, and free disabled parking at our entrance show our commitment to your comfort.
+            </p>
+             <p class="cs-text">
+                Whether you're seeking relief from tension and pain or simply craving deep relaxation, our passion is helping you feel better. We believe in the transformative power of authentic Thai massage, delivered with skill, care, and genuine loving-kindness—the principle of metta that underpins all we do.
+            </p>
+            <div id="quote-827">
+                <span class="cs-quote-text">
+                    I've loved massage therapy for as long as I can remember. Creating Regent Thai Massage & Spa lets me share that passion and help people through authentic Thai healing traditions.
+                </span>
+                <span class="cs-name">Runa</span>
+                <span class="cs-job">Owner & Founder</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote-white.svg" alt="quote icon" width="136" height="77">
+            </div>                        
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-859">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Team</span>
+                <h2 class="cs-title">Experienced Therapists Dedicated to Your Wellbeing</h2>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" alt="staff" loading="lazy" decoding="async" >
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Massage Therapist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" alt="staff" loading="lazy" decoding="async" >
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Massage Therapist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 576}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 634}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/staff.jpg" | resize({width: 828}) | jpeg %}" alt="staff" loading="lazy" decoding="async" >
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Massage Therapist</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}
