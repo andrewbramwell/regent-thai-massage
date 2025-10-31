@@ -324,17 +324,26 @@
   }
   #cs-navigation .cs-container {
     width: 100%;
+    min-height: 7.5rem;
+    /* ADD THIS - adjust value as needed */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   #cs-navigation .cs-top {
     order: 2;
   }
   #cs-navigation .cs-logo {
     max-width: 9.875rem;
-    height: 100%;
-    margin: 0 auto 0 0;
+    height: 8.75rem;
+    /* or whatever height you want */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* ADD THIS */
+    transform: translate(-50%, -50%);
+    /* CHANGE THIS - was translateX(-50%) */
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0;
