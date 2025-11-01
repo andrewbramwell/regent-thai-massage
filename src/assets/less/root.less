@@ -17,7 +17,7 @@
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
-        --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+        --headerFontSize: clamp(1.55rem, 3.12vw, 2.45rem);
         --bodyFontSize: 1rem;
 
         /* 60px - 100px top and bottom */
@@ -386,8 +386,8 @@
     }
 
     .cs-logo {
-    max-width: (158/16rem);
-    height: (140/16rem);  /* or whatever height you want */
+    max-width: (200/16rem);
+    height: (200/16rem);  /* or whatever height you want */
     position: absolute;
     left: 50%;
     top: 50%;  /* ADD THIS */
@@ -410,17 +410,20 @@
 
 
 		.cs-toggle {
-            /* 44px - 48px */
-            width: clamp(2.75rem, 6vw, 3rem);
-            height: clamp(2.75rem, 6vw, 3rem);
-            margin: 0 0 0 auto;
-            background-color: var(--primary);
-            border: none;
-            border-radius: (4/16rem);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /* 44px - 48px */
+    width: clamp(2.75rem, 6vw, 3rem);
+    height: clamp(2.75rem, 6vw, 3rem);
+    position: absolute;  /* ADD THIS */
+    top: (6/16rem);     /* ADD THIS - adjust to control how high */
+    right: (8/16rem);   /* ADD THIS - distance from right edge */
+    background-color: transparent;
+    border: none;
+    border-radius: (4/16rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;         /* ADD THIS - ensures it's above the logo */
+}
 
         .cs-active {
             .cs-line1 {

@@ -45,7 +45,7 @@
   }
   #hero-856 .cs-title {
     /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    font-size: clamp(1.55rem, 3.12vw, 2.45rem);
     font-weight: 900;
     line-height: 1.2em;
     text-align: center;
@@ -114,7 +114,10 @@
     /* sends it to the right in the 2nd position */
     order: 2;
   }
-  #hero-856 .cs-title,
+  #hero-856 .cs-title {
+    text-align: left;
+    font-size: clamp(2.19375rem, 4.5vw, 3.43125rem);
+  }
   #hero-856 .cs-text {
     text-align: left;
   }

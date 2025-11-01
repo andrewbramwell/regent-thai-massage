@@ -14,7 +14,7 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.55rem, 3.12vw, 2.45rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -335,8 +335,8 @@
     order: 2;
   }
   #cs-navigation .cs-logo {
-    max-width: 9.875rem;
-    height: 8.75rem;
+    max-width: 12.5rem;
+    height: 12.5rem;
     /* or whatever height you want */
     position: absolute;
     left: 50%;
@@ -362,13 +362,20 @@
     /* 44px - 48px */
     width: clamp(2.75rem, 6vw, 3rem);
     height: clamp(2.75rem, 6vw, 3rem);
-    margin: 0 0 0 auto;
-    background-color: var(--primary);
+    position: absolute;
+    /* ADD THIS */
+    top: 0.375rem;
+    /* ADD THIS - adjust to control how high */
+    right: 0.5rem;
+    /* ADD THIS - distance from right edge */
+    background-color: transparent;
     border: none;
     border-radius: 0.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 20;
+    /* ADD THIS - ensures it's above the logo */
   }
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
