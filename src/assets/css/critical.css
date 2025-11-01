@@ -32,17 +32,6 @@
     align-items: center;
     flex-direction: column;
   }
-  #hero-856 .cs-topper {
-    font-size: 1rem;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
-  }
   #hero-856 .cs-title {
     /* 39px - 61px */
     font-size: clamp(1.55rem, 3.12vw, 2.45rem);
@@ -116,7 +105,7 @@
   }
   #hero-856 .cs-title {
     text-align: left;
-    font-size: clamp(2.19375rem, 4.5vw, 3.43125rem);
+    font-size: clamp(1.86rem, 3.744vw, 2.94rem);
   }
   #hero-856 .cs-text {
     text-align: left;

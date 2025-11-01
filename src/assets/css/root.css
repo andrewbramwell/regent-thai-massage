@@ -324,7 +324,7 @@
   }
   #cs-navigation .cs-container {
     width: 100%;
-    min-height: 7.5rem;
+    min-height: 8.75rem;
     /* ADD THIS - adjust value as needed */
     display: flex;
     justify-content: space-between;
@@ -443,7 +443,6 @@
     padding-bottom: 2.4em;
     background-color: var(--secondary);
     overflow: hidden;
-    box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -865,7 +864,7 @@
   #banner-1881 {
     padding: var(--sectionPadding);
     /* 180px - 242px */
-    padding-top: clamp(11.7rem, 21.6vw, 15.73rem);
+    padding-top: clamp(13.104rem, 24.192vw, 17.6176rem);
     /* 60px - 182px */
     padding-bottom: clamp(2.53125rem, 9.45vw, 7.678125rem);
     /* clips the line from causing overflow issues for going off screen */
