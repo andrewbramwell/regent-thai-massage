@@ -828,7 +828,7 @@
   }
   #cs-navigation .cs-logo::before {
     content: "";
-    width: 100vw;
+    width: 50vw;
     height: 1px;
     background-color: var(--primary);
     display: block;
@@ -839,7 +839,7 @@
   }
   #cs-navigation .cs-logo::after {
     content: "";
-    width: 100vw;
+    width: 50vw;
     height: 1px;
     background-color: var(--primary);
     display: block;
