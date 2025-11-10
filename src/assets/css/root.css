@@ -757,7 +757,6 @@
   }
   #cs-navigation .cs-container {
     width: 100%;
-    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
