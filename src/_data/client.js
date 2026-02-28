@@ -3,7 +3,7 @@ module.exports = {
     "email": "info@regentthaimassageandspa.co.uk",
     "phoneForTel": "+447301291923",
     "phoneFormatted": "07301 291923",
-    "openingHours": "Mon-Sat: 10am-8pm, Sun: 11am-7pm",
+    "openingHours": "Mon-Sat: 10am-8pm, Sun: 10am-6pm",
     "onlineBooking": "https://regentthaimassagespa.setmore.com/",
     "address": {
         "lineOne": "3, Ormond Terrace",
